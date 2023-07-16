@@ -1,0 +1,64 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f5f5f5, #f54);
+}
+
+.container {
+  width: 50%;
+  margin: 50px auto;
+  display: grid;
+  grid-template: repeat(5, 1fr) / 1fr;
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 25px;
+  color: blueviolet;
+  font-weight: 700;
+}
+
+h5 {
+  color: #777;
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 30px;
+}
+
+.choice i {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choice i:hover {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 0.5;
+}
